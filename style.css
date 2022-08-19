@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(249, 249, 249);
+}
+header {
+    height: 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+}
+.header-img, .header-text, .header-btn {
+    margin: 1% 5%;
+}
+.header-img img {
+    height: 50px;
+}
+.header-text span{
+    margin: 0 2vw;
+    color: #aaa;
+}
+.header-text span:hover {
+    border-bottom: 3px solid #8071D0;
+    color: black;
+    cursor: pointer;
+}
+button {
+    padding: 20px 33px;
+    border-radius: 20px;
+    font-size: 11px;
+    cursor: pointer;
+    border: none;
+}
+.header-btn button:hover {
+    box-shadow: 1px 1px 5px #dfb4b7 inset;
+}
+.header-btn button {
+    background-color: #FFD8DB;
+    color: #A389CC;
+    font-weight: 700;
+}
+.new-account img {
+    margin-left: 10px;
+}
+.new-account :nth-child(2) {
+    cursor: not-allowed;
+}
+.new-account :last-child {
+    cursor: pointer;
+}
+.new-account button:hover {
+    box-shadow: 1px 1px 5px #1e127a inset;
+}
+.new-account button {
+    background-color: #5243C0;
+    color: #ffffff;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 8% 10%;
+}
+.sect-left {
+   flex: 0 0 40%;
+}
+.sect-left h1 {
+    font-size: 60px;
+}
+.lists ul {
+    margin-top: 55px;
+}
+.para {
+    margin: 25px auto;
+}
+.text {
+    display: inline-block;
+    width: 8.5vw;
+    margin: auto 1vw;
+}
+.new-account {
+    display: flex;
+    align-items: center;
+}
+.pink {
+    border: 5px solid #FED7DA;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #FED7DA;
+    border-radius: 10px;
+}
+.orange {
+    border: 5px solid #FD6534;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #FD6534;
+    border-radius: 10px;    
+}
+.blue {
+    border: 5px solid #9ED095;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #9ED095;
+    border-radius: 10px;
+}
+.red {
+    border: 5px solid #FFE4A0;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: #FFE4A0;
+    border-radius: 10px;
+}
+.hover {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+.hover-tick, .sub-hover {
+    display: inline-block;
+}
+.hover-tick {
+    position: relative;
+}
+.sub-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.hover:hover .sub-hover {
+    display: flex;
+}
+.hover:hover {
+    box-shadow: 0 0 10px #bbb;
+    background-color: white;
+}
+.lists li {
+    width: 25vw;
+    cursor: pointer;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    margin-top: 8px;
+}
+.hover :nth-child(4) {
+    margin: auto 1.6vw;
+}
+.sect-right img {
+    height: 500px;
+    width: auto;
+    margin-left: 15%;
+}
+.sect-right {
+    flex: 0 0 60%;
+}
+footer {
+    text-align: right;
+    font-size: 10px;
+}
+.dot {
+    font-family: 'Roboto Slab', serif;
+    color: #5243C0;
+    font-size: 60px;
+}
+
+
+/* For responsive webpage */
+
+@media (max-width: 600px) {
+    main    {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90vw;
+        margin: 20% 2%;        
+    }
+    .sect-right img {
+        margin: auto;
+    }
+    .lists li {
+        width: 65vw;
+    }
+    .text {
+        width: 30vw;
+    }
+    header {
+        width: 100%;
+        z-index: 10;
+    }
+}
