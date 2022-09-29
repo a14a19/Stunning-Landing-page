@@ -163,6 +163,9 @@ main {
 }
 .sect-right {
     flex: 0 0 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 footer {
     text-align: right;
