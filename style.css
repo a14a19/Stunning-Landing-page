@@ -10,7 +10,7 @@ body {
     background-color: rgb(249, 249, 249);
 }
 header {
-    height: 100px;
+    /* height: 100px; */
     display: flex;
     position: fixed;
     top: 0;
@@ -35,7 +35,7 @@ header {
     cursor: pointer;
 }
 button {
-    padding: 20px 33px;
+    padding: 18px 22px;
     border-radius: 20px;
     font-size: 11px;
     cursor: pointer;
@@ -68,7 +68,7 @@ button {
 main {
     display: flex;
     justify-content: space-between;
-    margin: 8% 10%;
+    margin: 90px 10% 50px 10%;
 }
 .sect-left {
    flex: 0 0 40%;
@@ -84,7 +84,7 @@ main {
 }
 .text {
     display: inline-block;
-    width: 8.5vw;
+    min-width: 110px;
     margin: auto 1vw;
 }
 .new-account {
@@ -148,7 +148,7 @@ main {
     background-color: white;
 }
 .lists li {
-    width: 25vw;
+    width: 100%;
     cursor: pointer;
     background-color: rgb(246, 246, 246);
     border-radius: 10px;
@@ -158,8 +158,9 @@ main {
     margin: auto 1.6vw;
 }
 .sect-right img {
-    height: 400px;
-    width: auto;
+    /* height: 400px; */
+    width: 80%;
+    min-width: 280px;
     margin-left: 15%;
 }
 .sect-right {
@@ -177,6 +178,12 @@ footer {
 
 
 /* For responsive webpage */
+
+@media(max-width: 800px){
+    .header-text {
+        display: none;
+    }
+}
 
 @media (max-width: 600px) {
     main    {
