@@ -83,7 +83,7 @@ main {
 }
 .text {
     display: inline-block;
-    min-width: 110px;
+    min-width: 120px;
     margin: auto 1vw;
 }
 .new-account {
@@ -147,7 +147,6 @@ main {
     background-color: white;
 }
 .lists li {
-    width: 100%;
     cursor: pointer;
     background-color: rgb(246, 246, 246);
     border-radius: 10px;
@@ -184,23 +183,21 @@ footer {
     .header-text {
         display: none;
     }
+    .hover {
+        display: flex;
+        align-items: center;
+        padding: 6px;
+    }
 }
 
 @media (max-width: 600px) {
     main    {
         display: flex;
         flex-direction: column-reverse;
-        width: 90vw;
-        margin: 20% 2%;        
+        margin: 90px 2% 50px 2%;        
     }
     .sect-right img {
         margin: auto;
-    }
-    .lists li {
-        width: 65vw;
-    }
-    .text {
-        width: 30vw;
     }
     header {
         width: 100%;
